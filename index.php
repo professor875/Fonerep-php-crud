@@ -19,15 +19,33 @@
     <div class="w-full p-6">
         <table class="w-full border-2 rounded-xl max-w-[700px] mx-auto">
             <tr class="border border-black">
+                <th>id</th>
                 <th>Name</th>
                 <th>Grade</th>
                 <th>Action</th>
             </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
+            <?php
+            require_once "./controllers/conn.php";
+            $sql_query = "SELECT * FROM users";
+            if ($students = $conn ->query($sql_query)) {
+                while ($row = $students -> fetch_assoc()) {
+                    $Id = $row['id'];
+                    $Name = $row['name'];
+                    $Grade = $row['grade'];
+                    ?>
+
+                    <tr class="trow">
+                        <td><?php echo $Id; ?></td>
+                        <td><?php echo $Name; ?></td>
+                        <td><?php echo $Grade; ?></td>
+                        <td><a href="./edit.php?id=<?php echo $Id; ?>" class="btn btn-primary">Edit</a></td>
+<!--                        <td><a href="./delete.php?id=--><?php //echo $Id; ?><!--" class="btn btn-danger">Delete</a></td>-->
+                    </tr>
+
+                    <?php
+                }
+            }
+            ?>
         </table>
     </div>
 

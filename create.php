@@ -17,7 +17,7 @@
 </nav>
 
 <div class="flex justify-center w-full pt-32">
-    <form method="post" action="./controllers/create.php"
+    <form method="post" action="./CreateController.php"
           class="border-2 rounded-2xl p-12 bg-gray-100 flex flex-col justify-center items-center min-w-[600px] gap-6">
         <h1 class="text-3xl font-bold">Create Students</h1>
 
