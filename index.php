@@ -39,7 +39,7 @@
                         <td><?php echo $Name; ?></td>
                         <td><?php echo $Grade; ?></td>
                         <td><a href="./edit.php?id=<?php echo $Id; ?>" class="btn btn-primary">Edit</a></td>
-<!--                        <td><a href="./delete.php?id=--><?php //echo $Id; ?><!--" class="btn btn-danger">Delete</a></td>-->
+                        <td><a href="./DeleteController.php?id=<?php echo $Id; ?>" class="btn btn-danger">Delete</a></td>
                     </tr>
 
                     <?php
