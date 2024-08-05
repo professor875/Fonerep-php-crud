@@ -43,7 +43,7 @@
                 </label>
 
                 <span class="w-full flex justify-end">
-            <button class="bg-green-600 hover:bg-green-700 transition rounded-xl px-6 py-2 text-white text-semibold">Update</button>
+            <button class="bg-yellow-600 hover:bg-yellow-700 transition rounded-xl px-6 py-2 text-white text-semibold">Update</button>
         </span>
             </form>
             <?php

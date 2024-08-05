@@ -38,10 +38,9 @@
                         <td><?php echo $Id; ?></td>
                         <td><?php echo $Name; ?></td>
                         <td><?php echo $Grade; ?></td>
-                        <td><a href="./edit.php?id=<?php echo $Id; ?>" class="btn btn-primary">Edit</a></td>
-                        <td><a href="./DeleteController.php?id=<?php echo $Id; ?>" class="btn btn-danger">Delete</a></td>
+                        <td><a class="px-3 py-2 rounded-xl bg-yellow-500" href="./edit.php?id=<?php echo $Id; ?>" class="btn btn-primary">Edit</a></td>
+                        <td><a class="px-3 py-2 rounded-xl bg-red-500" href="./DeleteController.php?id=<?php echo $Id; ?>" class="btn btn-danger">Delete</a></td>
                     </tr>
-
                     <?php
                 }
             }
